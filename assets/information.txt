@@ -1,0 +1,42 @@
+keytool -genkey -v -keystore %userprofile%\upload-keystore.jks ^
+More?           -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 ^
+More?           -alias upload
+Enter keystore password:
+keytool error: java.lang.NullPointerException
+
+C:\Windows\System32>  keytool -genkey -v -keystore D:upload-keystore.jks ^
+More?           -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 ^
+More?           -alias upload
+Enter keystore password:
+Re-enter new password:
+They don't match. Try again
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  sipas
+What is the name of your organizational unit?
+  [Unknown]:  efy
+What is the name of your organization?
+  [Unknown]:  efy
+What is the name of your City or Locality?
+  [Unknown]:  hai duong
+What is the name of your State or Province?
+  [Unknown]:  tp hai duong
+What is the two-letter country code for this unit?
+  [Unknown]:  hd
+Is CN=sipas, OU=efy, O=efy, L=hai duong, ST=tp hai duong, C=hd correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=sipas, OU=efy, O=efy, L=hai duong, ST=tp hai duong, C=hd
+Enter key password for <upload>
+        (RETURN if same as keystore password):
+[Storing D:upload-keystore.jks]
+
+
+storePassword=efyvn@123
+keyPassword=efyvn@123
+keyAlias=upload
+storeFile=D:\PROJECT\Efy-app-mobile\Hai Duong\haiduong_sipas\assets\upload-keystore.jks
+
+pass: efyvn@123
